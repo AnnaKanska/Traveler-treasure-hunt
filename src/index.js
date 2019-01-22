@@ -38,24 +38,67 @@ class App extends React.Component {
     } else {
       return (
         <div>
-          <h1>Traveler treasure hunt</h1>
-          <p>
-            This treasure hunt is going to take you on a journey around
-            Barcelona's most spectacular places! The goal is to visit all places
-            and fulfill all tasks in the shortest amount of time. Ener your
-            email address and press “start” when you're ready. Once you do so,
-            your current location and task will appear.
-          </p>
-          <div>
-            <input
-              type="email"
-              placeholder="enter email here"
-              required
-              onChange={e => this.updateInput(e)}
-            />
+          <div className="title">
+            <ul className="title-grid">
+              <li className="letter color1">T</li>
+              <li className="letter">R</li>
+              <li className="letter color2">A</li>
+              <li className="letter color4 ">V</li>
+              <li className="letter">E</li>
+              <li className="letter color1">L</li>
+              <li className="letter">E</li>
+              <li className="letter color3">R</li>
+              <li className="letter">T</li>
+              <li className="letter color3">R</li>
+              <li className="letter">E</li>
+              <li className="letter color1">A</li>
+              <li className="letter color2">S</li>
+              <li className="letter">U</li>
+              <li className="letter color2">R</li>
+              <li className="letter color1">E</li>
+              <li className="letter color1">
+                <img
+                  className="icon"
+                  src="https://image.flaticon.com/icons/svg/1078/1078005.svg"
+                />
+              </li>
+              <li className="letter color2">
+                <img
+                  className="icon"
+                  src="https://image.flaticon.com/icons/svg/71/71423.svg"
+                />
+              </li>
+              <li className="letter color3">H</li>
+              <li className="letter">U</li>
+              <li className="letter color3">N</li>
+              <li className="letter color1">T</li>
+              <li className="letter">
+                <img
+                  className="icon"
+                  src="https://image.flaticon.com/icons/svg/945/945967.svg"
+                />
+              </li>
+              <li className="letter color4 ">
+                <img
+                  className="icon"
+                  src="https://image.flaticon.com/icons/svg/685/685775.svg"
+                />
+              </li>
+            </ul>
           </div>
-          <div>
-            <button onClick={e => this.addEmail(e)}>start</button>
+          <div />
+          <div className="email">
+            <div>
+              <input
+                type="email"
+                placeholder="your email here"
+                required
+                onChange={e => this.updateInput(e)}
+              />
+            </div>
+            <div>
+              <button onClick={e => this.addEmail(e)}>start</button>
+            </div>
           </div>
         </div>
       );
