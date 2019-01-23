@@ -1,5 +1,7 @@
 body {
-  background-image: url('https://c.pxhere.com/photos/50/04/paper_background_wallpaper_texture_abstract_pattern_material_surface-1200849.jpg!d')
+  background-color: white;
+
+  /* background-image: url('https://c.pxhere.com/photos/50/04/paper_background_wallpaper_texture_abstract_pattern_material_surface-1200849.jpg!d') */
 }
 h3 {
   color: whitesmoke;
@@ -54,5 +56,24 @@ h3 {
   width: 17px;
 }
 .email {
-  
+
+}
+.moving1 {
+  animation-name: walk;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  width: 20px;
+  margin-left: 20%
+}
+.moving2 {
+  animation-name: walk-back;
+  animation-duration: 3s;
+  width: 20px;
+  margin-left: 80%;
+  transform: scaleX(-1);
+}
+
+@keyframes walk {
+  from {left: 0}
+  to {left: 20%}
 }

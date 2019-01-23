@@ -87,6 +87,10 @@ class App extends React.Component {
             </ul>
           </div>
           <div />
+          <img
+            className="moving1"
+            src="https://image.flaticon.com/icons/svg/71/71423.svg"
+          />
           <div className="email">
             <div>
               <input
@@ -100,6 +104,10 @@ class App extends React.Component {
               <button onClick={e => this.addEmail(e)}>start</button>
             </div>
           </div>
+          <img
+            className="moving2"
+            src="https://image.flaticon.com/icons/svg/71/71423.svg"
+          />
         </div>
       );
     }
